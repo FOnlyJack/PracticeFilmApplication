@@ -41,6 +41,7 @@ public class FilmCreditsActivity extends BaseActivity implements FilmCreditsCont
     FilmCreditsPresenter filmCreditsPresenter;
     private FilmCreditsContract.Presenter presenter;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
