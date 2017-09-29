@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="200px"
+              android:background="#fff"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_film_credits_image"
+        android:layout_width="135px"
+        android:layout_height="125px"
+        android:layout_margin="35px"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="50px"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_credit_personate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="28px"/>
+
+        <TextView
+            android:id="@+id/tv_credit_personateCn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#bbbbbb"
+            android:textSize="20px"/>
+
+        <TextView
+            android:id="@+id/tv_credit_personateEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="24px"/>
+    </LinearLayout>
+
+    <com.example.changemax.sqhappy.ui.view.MoreCircleImageView
+        android:id="@+id/iv_rolecover_img"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        app:civ_border_color="@color/colorWhite"
+        app:civ_border_width="2px"/>
+
+</LinearLayout>

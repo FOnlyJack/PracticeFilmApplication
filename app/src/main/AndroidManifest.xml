@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.changemax.sqhappy">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".FilmApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BaseAppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zaaach.citypicker.CityPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CityPicker.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <!--电影详情-->
+        <activity
+            android:name=".ui.activity.FilmDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--预告片-->
+        <activity
+            android:name=".ui.activity.VideoPlayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <!--职员表-->
+        <activity
+            android:name=".ui.activity.FilmCreditsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--AutoLayout-->
+        <meta-data
+            android:name="design_width"
+            android:value="768">
+        </meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1280">
+        </meta-data>
+        <!--高德地图-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="a8bb9098afb46570387818dae41e508e"/>
+    </application>
+
+
+</manifest>

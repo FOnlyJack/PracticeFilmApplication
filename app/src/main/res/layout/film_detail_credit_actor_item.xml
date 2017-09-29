@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="80dp"
+                android:layout_height="180dp"
+                android:paddingLeft="15px"
+                android:paddingTop="70px">
+
+    <ImageView
+        android:id="@+id/iv_credit_actor"
+        android:layout_width="140px"
+        android:layout_height="180px"/>
+
+    <TextView
+        android:id="@+id/tv_actor_typename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_credit_actor"
+        android:layout_marginTop="19px"
+        android:text=""
+        android:textColor="#666666"
+        android:textSize="23px"/>
+
+    <TextView
+        android:id="@+id/tv_actor_typename_en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_actor_typename"
+        android:layout_marginTop="9px"
+        android:text=""
+        android:textColor="#a1a1a1"
+        android:textSize="18px"/>
+</RelativeLayout>

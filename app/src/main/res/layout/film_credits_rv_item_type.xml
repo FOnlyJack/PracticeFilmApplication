@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:background="#f6f6f6">
+
+    <TextView
+        android:id="@+id/tv_credit_type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20px"
+        android:text="sdfafsaf"
+        android:textColor="#7e7e7e"
+        android:textSize="23px"/>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="#fc4b83">
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:padding="25px"
+            android:text="北京"
+            android:textColor="@color/colorWhite"
+            android:textSize="30px"/>
+
+        <com.example.changemax.sqhappy.ui.view.AutoTabLayout
+            android:id="@+id/film_tab_layout"
+            android:layout_width="380px"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:tabIndicatorColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90px">
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>
