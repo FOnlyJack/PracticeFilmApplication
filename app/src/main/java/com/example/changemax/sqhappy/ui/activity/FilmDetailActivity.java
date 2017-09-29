@@ -33,6 +33,9 @@ import com.example.changemax.sqhappy.ui.BaseActivity;
 import com.example.changemax.sqhappy.ui.adapter.FIlmShortPLRvAdapter;
 import com.example.changemax.sqhappy.ui.adapter.FilmDetailRvAdapter;
 import com.example.changemax.sqhappy.utils.StretchUtil;
+import com.zhy.autolayout.AutoFrameLayout;
+import com.zhy.autolayout.AutoLinearLayout;
+import com.zhy.autolayout.AutoRelativeLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +49,7 @@ import butterknife.ButterKnife;
  * Created by ChangeMax on 2017/3/19.
  */
 
-public class FilmDetailActivity extends BaseActivity implements SwipeRefreshLayout.OnRefreshListener, FilmDetailContract.View {
+public class   FilmDetailActivity extends BaseActivity implements SwipeRefreshLayout.OnRefreshListener, FilmDetailContract.View {
     @BindView(R.id.iv_movie_play_bg)
     ImageView iv_movie_play_bg;
     @BindView(R.id.play_vedio)
@@ -74,15 +77,15 @@ public class FilmDetailActivity extends BaseActivity implements SwipeRefreshLayo
     @BindView(R.id.rv_credits)
     RecyclerView rvCredits;
     @BindView(R.id.ln_into_credits)
-    LinearLayout lnIntoCredits;
+    AutoLinearLayout lnIntoCredits;
     @BindView(R.id.tv_film_movie_detail_counts)
     TextView tvFilmMovieDetailCounts;
     @BindView(R.id.tv_film_phone_detail_counts)
     TextView tvFilmPhoneDetailCounts;
     @BindView(R.id.rl_to_movie_play)
-    RelativeLayout rlToMoviePlay;
+    AutoRelativeLayout rlToMoviePlay;
     @BindView(R.id.rl_to_show_photo_detail)
-    RelativeLayout rlToShowPhotoDetail;
+    AutoRelativeLayout rlToShowPhotoDetail;
     @BindView(R.id.film_detail_swip)
     SwipeRefreshLayout filmDetailSwip;
     @BindView(R.id.toolbar)
@@ -96,7 +99,7 @@ public class FilmDetailActivity extends BaseActivity implements SwipeRefreshLayo
     @BindView(R.id.iv_to_photo_show)
     ImageView ivToPhotoShow;
     @BindView(R.id.ln_film_story)
-    LinearLayout lnFilmStory;
+    AutoLinearLayout lnFilmStory;
     @BindView(R.id.tv_ranking)
     TextView tvRanking;
     @BindView(R.id.tv_todayboxdes)
@@ -104,13 +107,13 @@ public class FilmDetailActivity extends BaseActivity implements SwipeRefreshLayo
     @BindView(R.id.tv_totalbox)
     TextView tvTotalbox;
     @BindView(R.id.rl_to_short_pinglun)
-    RelativeLayout rlToShortPinglun;
+    AutoRelativeLayout rlToShortPinglun;
     @BindView(R.id.rv_short_pinglun)
     RecyclerView rvShortPinglun;
     @BindView(R.id.tv_show_more_short_pinglun)
     TextView tvShowMoreShortPinglun;
     @BindView(R.id.rl_to_long_pinglun)
-    RelativeLayout rlToLongPinglun;
+    AutoRelativeLayout rlToLongPinglun;
     @BindView(R.id.tv_long_rv_pinglun_content)
     TextView tvLongRvPinglunContent;
     @BindView(R.id.iv_long_hear_pingluner)
@@ -124,7 +127,7 @@ public class FilmDetailActivity extends BaseActivity implements SwipeRefreshLayo
     @BindView(R.id.tv_totalBoxUnit)
     TextView tvTotalBoxUnit;
     @BindView(R.id.fr_main_appbar)
-    FrameLayout frMainAppbar;
+    AutoFrameLayout frMainAppbar;
 
     private FilmDetailRvAdapter filmDetailRvAdapter;
     private FIlmShortPLRvAdapter fIlmShortPLRvAdapter;
