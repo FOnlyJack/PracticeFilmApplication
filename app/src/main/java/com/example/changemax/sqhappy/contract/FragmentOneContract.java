@@ -9,6 +9,7 @@ import java.util.List;
 
 /**
  * Created by ChangeMax on 2017/3/18.
+ * 契约类 把View和Presenter所需的业务和UI层 全部方法展示出来  BasePresenter里可以写全局初始化的方法
  */
 
 public interface FragmentOneContract {

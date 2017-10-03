@@ -35,7 +35,7 @@ import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
 
 /**
- * Created by Nathen on 2016/12/30.
+ * Created by ChangeMax on 2017/3/15.
  */
 public class VideoPlayActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener, VideoPlayContract.View, BaseQuickAdapter.RequestLoadMoreListener {
     @BindView(R.id.jc_video)

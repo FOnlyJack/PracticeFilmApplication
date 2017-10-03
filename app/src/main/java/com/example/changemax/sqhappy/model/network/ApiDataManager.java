@@ -9,6 +9,7 @@ import com.example.changemax.sqhappy.model.network.entity.FilmIsHitingBean;
 import com.example.changemax.sqhappy.model.network.entity.FilmReviewsBean;
 import com.example.changemax.sqhappy.model.network.entity.FilmStagePhotoBean;
 import com.example.changemax.sqhappy.model.network.entity.FilmVideoBean;
+
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
@@ -96,9 +97,9 @@ public class ApiDataManager {
     /**
      * 预告片&拍摄花絮
      */
-    public static Observable<FilmVideoBean> getFilmVideoInfo(int pageIndex , int movieid) {
+    public static Observable<FilmVideoBean> getFilmVideoInfo(int pageIndex, int movieid) {
         initApiConfigutation(ApiConstants.FILM_DATA_SOURCE_TYPE_CREDITS_VIDEO_STAGE_COMING_NEW);
-        return ApiClient.getApiService().getFilmVideo(pageIndex , movieid)
+        return ApiClient.getApiService().getFilmVideo(pageIndex, movieid)
                 .subscribeOn(Schedulers.io())
                 .unsubscribeOn(Schedulers.io())
                 .subscribeOn(AndroidSchedulers.mainThread())

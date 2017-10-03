@@ -11,8 +11,7 @@ import retrofit2.Converter;
 import retrofit2.Retrofit;
 
 /**
- * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com ==>> baronzhang.com)
- *         16/2/25
+ * Created by ChangeMax on 2017/3/14
  */
 public class FastJsonConverterFactory extends Converter.Factory {
 

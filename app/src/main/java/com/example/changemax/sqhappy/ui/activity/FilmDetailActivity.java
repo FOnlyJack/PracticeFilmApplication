@@ -49,7 +49,7 @@ import butterknife.ButterKnife;
  * Created by ChangeMax on 2017/3/19.
  */
 
-public class   FilmDetailActivity extends BaseActivity implements SwipeRefreshLayout.OnRefreshListener, FilmDetailContract.View {
+public class FilmDetailActivity extends BaseActivity implements SwipeRefreshLayout.OnRefreshListener, FilmDetailContract.View {
     @BindView(R.id.iv_movie_play_bg)
     ImageView iv_movie_play_bg;
     @BindView(R.id.play_vedio)
@@ -185,9 +185,9 @@ public class   FilmDetailActivity extends BaseActivity implements SwipeRefreshLa
                 Intent intent = new Intent(FilmDetailActivity.this, VideoPlayActivity.class);
                 intent.putExtra("movieId", movieId);
                 intent.putExtra("videoHightUrl", videoHightUrl);
-                intent.putExtra("filmName",name);
-                intent.putExtra("vedioImg",videoimg);
-                intent.putExtra("vedioId",videoId);
+                intent.putExtra("filmName", name);
+                intent.putExtra("vedioImg", videoimg);
+                intent.putExtra("vedioId", videoId);
                 startActivity(intent);
             }
         });
@@ -197,9 +197,9 @@ public class   FilmDetailActivity extends BaseActivity implements SwipeRefreshLa
                 Intent intent = new Intent(FilmDetailActivity.this, VideoPlayActivity.class);
                 intent.putExtra("movieId", movieId);
                 intent.putExtra("videoHightUrl", videoHightUrl);
-                intent.putExtra("filmName",name);
-                intent.putExtra("vedioImg",videoimg);
-                intent.putExtra("vedioId",videoId);
+                intent.putExtra("filmName", name);
+                intent.putExtra("vedioImg", videoimg);
+                intent.putExtra("vedioId", videoId);
                 startActivity(intent);
             }
         });

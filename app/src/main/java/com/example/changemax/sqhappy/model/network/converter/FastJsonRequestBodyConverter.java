@@ -10,8 +10,8 @@ import okhttp3.RequestBody;
 import retrofit2.Converter;
 
 /**
- * @author baronzhang (baron[dot]zhanglei[at]gmail[dot]com ==>> baronzhang.com)
- *         16/2/25
+ * Created by ChangeMax on 2017/3/14.
+ *
  */
 final class FastJsonRequestBodyConverter<T> implements Converter<T, RequestBody> {
 

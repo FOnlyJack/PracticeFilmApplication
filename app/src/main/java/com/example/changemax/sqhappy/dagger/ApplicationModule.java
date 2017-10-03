@@ -11,6 +11,7 @@ import dagger.Provides;
 
 /**
  * Created by ChangeMax on 2017/3/14.
+ * 提供ApplicationComponent里需要注入的对象。
  */
 @Module
 public class ApplicationModule {
